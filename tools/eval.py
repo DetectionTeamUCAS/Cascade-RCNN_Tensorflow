@@ -163,20 +163,20 @@ def parse_args():
     return args
 if __name__ == '__main__':
 
-    # args = parse_args()
-    # print(20*"--")
-    # print(args)
-    # print(20*"--")
-    # os.environ["CUDA_VISIBLE_DEVICES"] = args.GPU
-    # eval(args.eval_num, # use np.inf to test all the imgs. use 10 to test 10 imgs.
-    #      eval_dir=args.eval_imgs,
-    #      annotation_dir=args.test_annotation_dir,
-    #      showbox=args.showbox)
-    os.environ["CUDA_VISIBLE_DEVICES"] = '3'
-    eval(num_imgs=np.inf,  # use np.inf to test all the imgs. use 10 to test 10 imgs.
-         eval_dir='/data/VOC/VOC_test/VOC2007/JPEGImages/',
-         annotation_dir='/data/VOC/VOC_test/VOC2007/Annotations',
-         showbox=False)
+    args = parse_args()
+    print(20*"--")
+    print(args)
+    print(20*"--")
+    os.environ["CUDA_VISIBLE_DEVICES"] = args.GPU
+    eval(args.eval_num, # use np.inf to test all the imgs. use 10 to test 10 imgs.
+         eval_dir=args.eval_imgs,
+         annotation_dir=args.test_annotation_dir,
+         showbox=args.showbox)
+    # os.environ["CUDA_VISIBLE_DEVICES"] = '3'
+    # eval(num_imgs=np.inf,  # use np.inf to test all the imgs. use 10 to test 10 imgs.
+    #      eval_dir='/data/VOC/VOC_test/VOC2007/JPEGImages/',
+    #      annotation_dir='/data/VOC/VOC_test/VOC2007/Annotations',
+    #      showbox=False)
 
 
 
