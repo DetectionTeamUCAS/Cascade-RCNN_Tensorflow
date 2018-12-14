@@ -33,13 +33,13 @@ This project is completed by [YangXue](https://github.com/yangxue0827) and [Wang
 
 ## Data Format
 ```
-©À©¤©¤ VOCdevkit
-©¦?? ©À©¤©¤ VOCdevkit_train
-©¦??     ©À©¤©¤ Annotation
-©¦??     ©À©¤©¤ JPEGImages
-©¦   ©À©¤©¤ VOCdevkit_test
-©¦??     ©À©¤©¤ Annotation
-©¦??     ©À©¤©¤ JPEGImages
+├── VOCdevkit
+│   ├── VOCdevkit_train
+│       ├── Annotation
+│       ├── JPEGImages
+│   ├── VOCdevkit_test
+│       ├── Annotation
+│       ├── JPEGImages
 ```
 
 ## Compile
