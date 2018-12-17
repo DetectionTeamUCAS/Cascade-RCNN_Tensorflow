@@ -121,12 +121,12 @@ def eval(num_imgs, eval_dir, annotation_dir, showbox):
         real_test_imgname_list = test_imgname_list
     else:
         real_test_imgname_list = test_imgname_list[: num_imgs]
-    #
-    # faster_rcnn = build_whole_network.DetectionNetwork(base_network_name=cfgs.NET_NAME,
-    #                                                    is_training=False)
-    # eval_with_plac(det_net=faster_rcnn, real_test_imgname_list=real_test_imgname_list,
-    #                img_root=eval_dir,
-    #                draw_imgs=showbox)
+
+    faster_rcnn = build_whole_network.DetectionNetwork(base_network_name=cfgs.NET_NAME,
+                                                       is_training=False)
+    eval_with_plac(det_net=faster_rcnn, real_test_imgname_list=real_test_imgname_list,
+                   img_root=eval_dir,
+                   draw_imgs=showbox)
 
     save_dir = os.path.join(cfgs.EVALUATE_DIR, cfgs.VERSION)
     if not os.path.exists(save_dir):
