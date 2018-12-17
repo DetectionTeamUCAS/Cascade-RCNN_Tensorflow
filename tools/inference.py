@@ -114,12 +114,12 @@ def parse_args():
     return args
 if __name__ == '__main__':
 
-    # args = parse_args()
-    # print('Called with args:')
-    # print(args)
-    os.environ["CUDA_VISIBLE_DEVICES"] = '0'
-    inference('/mnt/USBC/gx/Detection/VOC2007test/JPEGImages/',
-              inference_save_path='/mnt/USBC/gx/wys/Faster_ca2/tools/demo/')
+    args = parse_args()
+    print('Called with args:')
+    print(args)
+    os.environ["CUDA_VISIBLE_DEVICES"] = args.GPU
+    inference(args.data_dir,
+              inference_save_path=args.save_dir)
 
 
 
