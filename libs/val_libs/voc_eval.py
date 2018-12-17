@@ -100,7 +100,7 @@ def voc_ap(rec, prec, use_07_metric=False):
   return ap
 
 
-def voc_eval(detpath, annopath, test_imgid_list, cls_name, ovthresh=0.95,
+def voc_eval(detpath, annopath, test_imgid_list, cls_name, ovthresh=0.5,
                  use_07_metric=False, use_diff=False):
   '''
 
