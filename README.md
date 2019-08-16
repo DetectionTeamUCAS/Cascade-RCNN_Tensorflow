@@ -1,4 +1,4 @@
-# Cascade-RCNN_Tensorflow
+﻿# Cascade-RCNN_Tensorflow
 
 ## Abstract
 This is a tensorflow re-implementation of [Cascade R-CNN Delving into High Quality Object Detection ](https://arxiv.org/abs/1712.00726).       
@@ -19,6 +19,15 @@ This project is completed by [YangXue](https://github.com/yangxue0827) and [Wang
 |2|75.67|68.69|56.73|47.82|35.5|20.29|6.46|0.38|
 |3|74.35|67.62|56.64|48.65|**38.02**|**23.19**|**8.05**|**0.54**|
 
+### use_voc2007_metric
+| Stage | AP50 | AP60 | AP70 | AP75 | AP80 | AP85 | AP90 | AP95 |
+|------------|:---:|:--:|:--:|:--:|:---:|:--:|:--:|:--:|
+|baseline|73.62|65.28|51.93|42.52|29.48|16.2|5.84|1.32|
+|1+2+3|73.69|66.59|56.19|48.82|39.47|25.57|12.09|2.5|
+|1+2|**74.01**|66.5|55.53|46.53|36.96|23.6|11.33|2.15|
+|1|72.92|64.29|52.41|48.8|30.36|16|5.64|2.15|
+|2|73.55|**66.75**|55.78|48.35|37.39|23.61|10.66|**2.69**|
+|3|71.58|65.73|**56.64**|**49.08**|**39.68**|**26.25**|**12.28**|2.32|
 
 ## Requirements
 1、tensorflow >= 1.2     
