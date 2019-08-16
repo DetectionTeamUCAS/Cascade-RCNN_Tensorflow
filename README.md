@@ -38,7 +38,7 @@ This project is completed by [YangXue](https://github.com/yangxue0827) and [Wang
 ## Download Model
 1、please download [resnet50_v1](http://download.tensorflow.org/models/resnet_v1_50_2016_08_28.tar.gz)、[resnet101_v1](http://download.tensorflow.org/models/resnet_v1_101_2016_08_28.tar.gz) pre-trained models on Imagenet, put it to $PATH_ROOT/data/pretrained_weights.     
 2、please download [mobilenet_v2](https://storage.googleapis.com/mobilenet_v2/checkpoints/mobilenet_v2_1.0_224.tgz) pre-trained model on Imagenet, put it to $PATH_ROOT/data/pretrained_weights/mobilenet.     
-3、please download [trained model](https://github.com/DetectionTeamUCAS/Models/tree/master/Cascade-RCNN_Tensorflow) by this project, put it to $PATH_ROOT/output/trained_weights.   
+3、please download [trained model](https://github.com/DetectionTeamUCAS/Models/tree/master/Cascade_R-CNN_Tensorflow) by this project, put it to $PATH_ROOT/output/trained_weights.   
 
 ## Data Format
 ```
