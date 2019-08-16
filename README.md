@@ -50,7 +50,7 @@ python setup.py build_ext --inplace
 
 ## Demo
 
-**Select a configuration file in the folder ($PATH_ROOT/libs/configs/) and copy its contents into cfgs.py, then download the corresponding [weights](https://github.com/DetectionTeamUCAS/Models/tree/master/Cascade-RCNN_Tensorflow).**      
+**Select a configuration file in the folder ($PATH_ROOT/libs/configs/) and copy its contents into cfgs.py, then download the corresponding [weights](https://github.com/DetectionTeamUCAS/Models/tree/master/Cascade_R-CNN_Tensorflow).**      
 
 ```   
 cd $PATH_ROOT/tools
